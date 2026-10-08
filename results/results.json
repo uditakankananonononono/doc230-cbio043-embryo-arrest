@@ -1,0 +1,130 @@
+{
+ "d1": {
+  "n_samples": 1027,
+  "n_features": 17648,
+  "arrested": 23,
+  "resveratrol": 7,
+  "arrest_types": {
+   "I": 10,
+   "II": 5,
+   "III": 8
+  },
+  "groups": {
+   "2C": 6,
+   "4C": 12,
+   "8C": 20,
+   "Arrested": 30,
+   "Blastocyst": 62,
+   "E3": 34,
+   "E4": 117,
+   "E5": 181,
+   "E6": 196,
+   "E7": 321,
+   "Late": 28,
+   "Morula": 14,
+   "Oocyte": 3,
+   "Zygote": 3
+  },
+  "feature_classes": {
+   "protein_coding": 15189,
+   "lncRNA": 1426,
+   "TE": 1033
+  }
+ },
+ "d2": {
+  "auroc": 1.0,
+  "auprc": 1.0,
+  "n": 95,
+  "pos": 23
+ },
+ "d2_gate_ge_0.90": true,
+ "d3_E3_vs_8C4C_same_stage_cross_source": {
+  "auroc": 1.0,
+  "auprc": 1.0,
+  "n": 66,
+  "pos": 34
+ },
+ "d3_batch_dominated": true,
+ "d4": {
+  "n": 23,
+  "counts": {
+   "I": 10,
+   "II": 5,
+   "III": 8
+  },
+  "macroF1": 1.0,
+  "majority_acc": 0.435
+ },
+ "d5": {
+  "genes_found": [
+   "DUX4",
+   "ZSCAN4",
+   "BTG4",
+   "ZNF280A",
+   "LEUTX",
+   "TPRX1",
+   "KLF17",
+   "DPPA3"
+  ],
+  "auroc_mean_score_arrested_vs_cleavage": 0.3339,
+  "auroc_sign_free": 0.6661
+ },
+ "d6": {
+  "50": {
+   "auroc": 1.0,
+   "auprc": 1.0,
+   "n": 95,
+   "pos": 23
+  },
+  "500": {
+   "auroc": 1.0,
+   "auprc": 1.0,
+   "n": 95,
+   "pos": 23
+  },
+  "2000": {
+   "auroc": 1.0,
+   "auprc": 1.0,
+   "n": 95,
+   "pos": 23
+  },
+  "5000": {
+   "auroc": 1.0,
+   "auprc": 1.0,
+   "n": 95,
+   "pos": 23
+  }
+ },
+ "d7_shuffle": {
+  "auroc": 0.3088,
+  "auprc": 0.2084,
+  "n": 95,
+  "pos": 23
+ },
+ "d8": {
+  "protein_coding": {
+   "auroc": 1.0,
+   "auprc": 1.0,
+   "n": 95,
+   "pos": 23
+  },
+  "non_protein_coding": {
+   "auroc": 1.0,
+   "auprc": 1.0,
+   "n": 95,
+   "pos": 23
+  }
+ },
+ "d9_resveratrol_vs_untreated_arrested": {
+  "auroc": 0.9586,
+  "auprc": 0.845,
+  "n": 30,
+  "pos": 7
+ },
+ "d10_arrested_vs_all_nonarrested_stagemismatched": {
+  "auroc": 1.0,
+  "auprc": 1.0,
+  "n": 1020,
+  "pos": 23
+ }
+}
